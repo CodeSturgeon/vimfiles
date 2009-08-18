@@ -1,0 +1,13 @@
+" Grab defaults
+source $VIMRUNTIME/../vimfiles/common_vimrc
+source $VIMRUNTIME/../vimfiles/common_gvimrc
+
+" Set default directorys to avoid turd files
+set directory=C:\Progra~1\Vim
+set backupdir=C:\Progra~1\Vim\backup
+
+" No behave mswin
+:be xterm
+
+" Set nice font
+set guifont=Courier_New:h10:cANSI
