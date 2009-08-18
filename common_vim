@@ -1,0 +1,60 @@
+" Make sure backspace works
+set backspace=indent,eol,start 
+
+" turn on filetype plugins
+filetype plugin on
+
+" Let vim set the title of terminals better
+set title
+
+" Turn on the position markers in the bottom right
+set ruler
+
+" Do not prompt to save buffers before switching
+set hidden
+
+" Have tab command completion work like the shell
+" Displays a list and only completes up to common point
+set wildmode=list:longest
+
+let javaScript_fold=1
+let python_highlight_space_errors=1
+
+" Switch on syntax highlighting if it wasn't on yet.
+if !exists("syntax_on")
+  syntax on
+endif
+
+" Switch on search pattern highlighting.
+set hlsearch
+
+" Stop wordwrap
+" set wrap!
+
+" Use tab and shift tab in normal, visual mode
+map <C-S-tab> :tabprevious<cr>
+map <C-tab> :tabnext<cr>
+" Use tab and shift tab in insert mode
+imap <C-S-tab> <esc>:tabprevious<cr>i
+imap <C-tab> <esc>:tabnext<cr>i
+
+" Mac tab nav mappings
+imap <D-S-Right> <esc>:tabnext<cr>i
+imap <D-S-Left> <esc>:tabprevious<cr>i
+map <D-S-Right> :tabnext<cr>
+map <D-S-Left> :tabprevious<cr>
+
+"  :nmap <C-S-tab> :tabprevious<cr>
+"  :nmap <C-tab> :tabnext<cr>
+"  :map <C-S-tab> :tabprevious<cr>
+"  :map <C-tab> :tabnext<cr>
+"  :imap <C-S-tab> <ESC>:tabprevious<cr>i
+"  :imap <C-tab> <ESC>:tabnext<cr>i
+"  :nmap <C-t> :tabnew<cr>
+"  :imap <C-t> <ESC>:tabnew<cr>
+ 
+" Aliases for my common mistypes
+:ab W w
+:ab Wq wq
+:ab WQ wq
+:ab Q q
