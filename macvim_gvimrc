@@ -1,0 +1,26 @@
+" MacVim tool bar off by default
+set go-=T
+
+" Use tab and shift tab in normal, visual mode
+map <C-S-tab> :tabprevious<cr>
+map <C-tab> :tabnext<cr>
+" Use tab and shift tab in insert mode
+imap <C-S-tab> <esc>:tabprevious<cr>i
+imap <C-tab> <esc>:tabnext<cr>i
+
+" Mac tab nav mappings
+imap <D-S-Right> <esc>:tabnext<cr>i
+imap <D-S-Left> <esc>:tabprevious<cr>i
+map <D-S-Right> :tabnext<cr>
+map <D-S-Left> :tabprevious<cr>
+
+"  :nmap <C-S-tab> :tabprevious<cr>
+"  :nmap <C-tab> :tabnext<cr>
+"  :map <C-S-tab> :tabprevious<cr>
+"  :map <C-tab> :tabnext<cr>
+"  :imap <C-S-tab> <ESC>:tabprevious<cr>i
+"  :imap <C-tab> <ESC>:tabnext<cr>i
+"  :nmap <C-t> :tabnew<cr>
+"  :imap <C-t> <ESC>:tabnew<cr>
+
+source ~/.vim/common_gvimrc
