@@ -1,5 +1,4 @@
 " Grab defaults
-source $VIMRUNTIME/../vimfiles/common_vimrc
 source $VIMRUNTIME/../vimfiles/common_gvimrc
 
 " Set default directorys to avoid turd files
