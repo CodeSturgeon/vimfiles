@@ -1,11 +1,35 @@
-" Nice contrasty color scheme
-colorscheme torte
+" Make sure that vi compatible mode is off
+set nocompatible
 
-" Make sure backspace works
+" Scroll rather than let your cursor get less than N from the edge
+set scrolloff=2
+
+" Stop join from using two spaces after punctuation
+set nojoinspaces
+
+" Make sure backspace works over these characters
 set backspace=indent,eol,start 
+
+" Put mode name in status line
+set showmode
+
+" Flash matching brackets
+set showmatch
+
+" Highlight the current line
+set cursorline
+
+" Make the highlight 'bold' in terminals
+hi CursorLine cterm=bold
 
 " turn on filetype plugins
 filetype plugin on
+
+" Only show status if there are at least two windows
+set laststatus=1
+
+" Switch on syntax highlighting
+syntax on
 
 " Let vim set the title of terminals better
 set title
@@ -23,19 +47,34 @@ set wildmode=list:longest
 let javaScript_fold=1
 let python_highlight_space_errors=1
 
-" Switch on syntax highlighting if it wasn't on yet.
-if !exists("syntax_on")
-  syntax on
-endif
+" Wrap lines by default
+set wrap
 
+" Don't wrap in the middle of words
+set linebreak
+
+" Use modelines
+set modeline
+
+" Allow 5 modelines
+set modelines=5
+
+" {{{ Search settings
 " Switch on search pattern highlighting.
 set hlsearch
+" Switch on search highlighting as you type
+set incsearch
+" Ignore case in search by default
+set ignorecase
+" Ignores ignorecase if there is an upper case char in the string
+set smartcase
+" }}}
 
-" Stop wordwrap
-" set wrap!
-
-" Aliases for my common mistypes
+" {{{ Aliases for my common mistypes
 :ab W w
 :ab Wq wq
 :ab WQ wq
 :ab Q q
+" }}}
+
+" vim:fdm=marker

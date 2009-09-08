@@ -1,8 +1,6 @@
-" Add bottomscroll in gui bar needed with wrap!
-set guioptions+=b
-
-"set ch=2		" Make command line two lines high
-
-set mousehide		" Hide the mouse when typing text
-
+" Use the standard vimrc stuff
 source ~/.vim/common_vimrc
+" Hide the mouse when typing text
+set mousehide
+" Nicer looking colorscheme
+colorscheme desert
