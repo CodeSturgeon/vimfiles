@@ -24,3 +24,4 @@ map <D-S-Left> :tabprevious<cr>
 "  :imap <C-t> <ESC>:tabnew<cr>
 
 source ~/.vim/common_gvimrc
+colorscheme macvim
