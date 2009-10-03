@@ -13,9 +13,6 @@ set backspace=indent,eol,start
 " Put mode name in status line
 set showmode
 
-" Flash matching brackets
-set showmatch
-
 " Highlight the current line
 set cursorline
 
@@ -64,10 +61,6 @@ set modelines=5
 set hlsearch
 " Switch on search highlighting as you type
 set incsearch
-" Ignore case in search by default
-set ignorecase
-" Ignores ignorecase if there is an upper case char in the string
-set smartcase
 " }}}
 
 " {{{ Aliases for my common mistypes
