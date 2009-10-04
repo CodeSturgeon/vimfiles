@@ -70,4 +70,14 @@ set incsearch
 :ab Q q
 " }}}
 
+" {{{ Camel Case Motion mappings
+map <silent> w <Plug>CamelCaseMotion_w 
+map <silent> b <Plug>CamelCaseMotion_b 
+map <silent> e <Plug>CamelCaseMotion_e 
+" Do not think the following are needed 
+" sunmap w
+" sunmap b
+" sunmap e
+" }}}
+
 " vim:fdm=marker
