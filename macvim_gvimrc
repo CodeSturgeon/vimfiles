@@ -14,6 +14,9 @@ imap <D-S-Left> <esc>:tabprevious<cr>i
 map <D-S-Right> :tabnext<cr>
 map <D-S-Left> :tabprevious<cr>
 
+" Project window shortcut
+map <D-S-Up> :Project<cr>
+
 "  :nmap <C-S-tab> :tabprevious<cr>
 "  :nmap <C-tab> :tabnext<cr>
 "  :map <C-S-tab> :tabprevious<cr>
