@@ -73,4 +73,7 @@ set incsearch
 " Default folding to off
 set foldlevel=999
 
+" Project plugin settings (:help project-flags)
+let g:proj_flags="stc"
+
 " vim:fdm=marker
