@@ -70,4 +70,7 @@ set incsearch
 :ab Q q
 " }}}
 
+" Default folding to off
+set foldlevel=999
+
 " vim:fdm=marker
