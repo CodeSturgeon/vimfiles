@@ -22,3 +22,5 @@ setlocal foldmethod=indent
 " OmniComplete CTRL-x CTRL-o to activate
 "setlocal omnifunc=pythoncomplete#Complete
 
+" Don't un-indent lines when you start with a #
+inoremap # X<BS>#
