@@ -9,8 +9,8 @@ imap <C-S-tab> <esc>:tabprevious<cr>i
 imap <C-tab> <esc>:tabnext<cr>i
 
 " Mac tab nav mappings
-imap <D-S-Right> <esc>:tabnext<cr>i
-imap <D-S-Left> <esc>:tabprevious<cr>i
+imap <D-S-Right> <esc>:tabnext<cr>a
+imap <D-S-Left> <esc>:tabprevious<cr>a
 map <D-S-Right> :tabnext<cr>
 map <D-S-Left> :tabprevious<cr>
 
