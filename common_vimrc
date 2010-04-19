@@ -68,6 +68,8 @@ set incsearch
 :ab Wq wq
 :ab WQ wq
 :ab Q q
+:ab Wa wa
+:ab WA wa
 " }}}
 
 " Default folding to off
