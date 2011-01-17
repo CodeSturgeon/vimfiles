@@ -27,4 +27,3 @@ map <D-S-Up> :Project<cr>
 "  :imap <C-t> <ESC>:tabnew<cr>
 
 source ~/.vim/common_gvimrc
-colorscheme macvim
