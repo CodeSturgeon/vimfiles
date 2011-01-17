@@ -1,3 +1,6 @@
+" Activate pathogen
+call pathogen#runtime_append_all_bundles()
+
 " Make sure that vi compatible mode is off
 set nocompatible
 
