@@ -1,7 +1,4 @@
-" Use the standard vimrc stuff
-source ~/.vim/common_vimrc
 " Hide the mouse when typing text
 set mousehide
 " Nicer looking colorscheme
-"colorscheme desert
-colorscheme codeburn
+colorscheme zenburn
