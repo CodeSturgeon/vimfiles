@@ -1,3 +1,6 @@
+" Font setting for MacVim
+set guifont=Menlo\ Regular:h13
+
 " MacVim tool bar off by default
 set go-=T
 
@@ -25,5 +28,9 @@ map <D-S-Up> :Project<cr>
 "  :imap <C-tab> <ESC>:tabnext<cr>i
 "  :nmap <C-t> :tabnew<cr>
 "  :imap <C-t> <ESC>:tabnew<cr>
+
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
+autocmd BufNewFile,BufRead /Users/fish/Projects/ciscodex/ios_confgs/* set shiftwidth=1 foldmethod=indent foldlevel=0
 
 source ~/.vim/common_gvimrc
