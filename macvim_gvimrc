@@ -33,4 +33,10 @@ map <D-S-Up> :Project<cr>
 
 autocmd BufNewFile,BufRead /Users/fish/Projects/ciscodex/ios_confgs/* set shiftwidth=1 foldmethod=indent foldlevel=0
 
+" Keep autogen files out of working dirs
+" Note that the trailing // changest the naming of the files
+" With trailing // the path is included in the name
+set directory=~/.vim_swap//
+set backupdir=~/.vim_backup//
+
 source ~/.vim/common_gvimrc
