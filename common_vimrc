@@ -1,6 +1,9 @@
 " Activate pathogen
 call pathogen#runtime_append_all_bundles()
 
+" Syntastic hush
+let g:syntastic_mode_map = { 'mode': 'passive'}
+
 " Make sure that vi compatible mode is off
 set nocompatible
 
