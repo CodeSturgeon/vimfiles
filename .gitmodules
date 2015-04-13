@@ -1,9 +1,0 @@
-[submodule "bundle/Color-Sampler-Pack"]
-	path = bundle/Color-Sampler-Pack
-	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
-[submodule "bundle/Conque-Shell"]
-	path = bundle/Conque-Shell
-	url = https://github.com/vim-scripts/Conque-Shell.git
-[submodule "bundle/tabular"]
-	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
