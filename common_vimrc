@@ -44,10 +44,23 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"" Syntastic section
+
 " Syntastic hush
 let g:syntastic_mode_map = { 'mode': 'passive'}
+" Enabled Syntastic to use :lnext without running :Errors
+" Still need to run :Errors to get the QuickFix to populate though
+" Better to use the :lop or :lw (not sure of difference yet) to open the Locations List
+let g:syntastic_always_populate_loc_list = 1
 
+" Run a one off check
 :nnoremap <leader>c :w<cr>:SyntasticCheck<cr>
+" Get Syntastic to STFU
+:nnoremap <leader>r :SyntasticReset<cr>
+" Quick navigation for Syntastic
+:nnoremap <leader>] :lnext<cr>
+:nnoremap <leader>[ :lprev<cr>
+
 
 " Make sure that vi compatible mode is off
 set nocompatible
