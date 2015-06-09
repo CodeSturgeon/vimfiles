@@ -1,0 +1,7 @@
+*.js
+*.h
+*.c
+*.sh
+.git
+.hg
+.venv
