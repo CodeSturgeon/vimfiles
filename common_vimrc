@@ -133,7 +133,11 @@ set incsearch
 :ab W w
 :ab Wq wq
 :ab WQ wq
+:ab Wqa wqa
+:ab WQa wqa
 :ab Q q
+:ab Qa qa
+:ab QA qa
 :ab Wa wa
 :ab WA wa
 " }}}
