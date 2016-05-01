@@ -11,3 +11,6 @@ setlocal foldmethod=indent
 
 " Don't un-indent lines when you start with a #
 inoremap # X<BS>#
+
+" Show where 80 is
+set colorcolumn=80
