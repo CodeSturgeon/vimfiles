@@ -28,6 +28,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'chase/vim-ansible-yaml'
+Plugin 'tpope/vim-obsession'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -84,6 +85,10 @@ set cursorline
 
 " Make the highlight 'bold' in terminals
 hi CursorLine cterm=bold
+
+" Set column highlight in insert mode
+autocmd InsertEnter * set cursorcolumn
+autocmd InsertLeave * set cursorcolumn!
 
 " turn on filetype plugins
 filetype plugin on
@@ -147,5 +152,8 @@ set foldlevel=999
 
 " Project plugin settings (:help project-flags)
 let g:proj_flags="stc"
+
+" Set mouse support to be on
+set mouse=a
 
 " vim:fdm=marker
