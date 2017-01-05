@@ -62,6 +62,9 @@ let g:syntastic_always_populate_loc_list = 1
 :nnoremap <leader>] :lnext<cr>
 :nnoremap <leader>[ :lprev<cr>
 
+" We have column highlighting, we dont need flake8 to btch about it
+let g:syntastic_python_flake8_args='--ignore=E501'
+
 " Set tags file
 set tags=~/.vim/tagfile
 
