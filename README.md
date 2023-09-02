@@ -1,5 +1,10 @@
-Vim files used in all my profiles
+My roving vim files
 
-Project plugin from: http://www.vim.org/scripts/script.php?script_id=69
-
-The badly named (but excellent) 'slime' plugin from: http://technotales.wordpress.com/2007/10/03/like-slime-for-vim/
+Standard install:
+```
+cd ~
+git clone git@github.com:CodeSturgeon/vimfiles.git .vim
+ln -s .vim/common_vimrc .vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+```

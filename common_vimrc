@@ -31,6 +31,7 @@ Plugin 'chase/vim-ansible-yaml'
 Plugin 'tpope/vim-obsession'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'sirtaj/vim-openscad'
+Plugin 'purofle/vim-mindustry-logic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,6 +64,9 @@ let g:syntastic_always_populate_loc_list = 1
 " Quick navigation for Syntastic
 :nnoremap <leader>] :lnext<cr>
 :nnoremap <leader>[ :lprev<cr>
+
+" Have CtrlP ignore __pycache__
+let g:ctrlp_custom_ignore = '__pycache__'
 
 " We have column highlighting, we dont need flake8 to btch about it
 let g:syntastic_python_flake8_args='--ignore=E501'
