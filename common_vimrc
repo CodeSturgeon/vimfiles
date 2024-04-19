@@ -26,12 +26,13 @@ Plugin 'gmarik/Vundle.vim'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
-Plugin 'scrooloose/syntastic'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'tpope/vim-obsession'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'chase/vim-ansible-yaml'
+"Plugin 'tpope/vim-obsession'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'sirtaj/vim-openscad'
-Plugin 'purofle/vim-mindustry-logic'
+"Plugin 'sirtaj/vim-openscad'
+"Plugin 'purofle/vim-mindustry-logic'
+Plugin 'dense-analysis/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,28 +49,24 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"" Syntastic section
+" The defaults for ALE well... suck... so lets change those
 
-" Syntastic hush
-let g:syntastic_mode_map = { 'mode': 'passive'}
-" Enabled Syntastic to use :lnext without running :Errors
-" Still need to run :Errors to get the QuickFix to populate though
-" Better to use the :lop or :lw (not sure of difference yet) to open the Locations List
-let g:syntastic_always_populate_loc_list = 1
+" Stop ALE from adding shit to text being edited
+let g:ale_virtualtext_cursor = 'disabled'
 
-" Run a one off check
-:nnoremap <leader>c :w<cr>:SyntasticCheck<cr>
-" Get Syntastic to STFU
-:nnoremap <leader>r :SyntasticReset<cr>
-" Quick navigation for Syntastic
-:nnoremap <leader>] :lnext<cr>
-:nnoremap <leader>[ :lprev<cr>
+" Stop ALE from constantly running
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_filetype_changed = 0
+
+" Bind ALE to syntastic keys (rather than none?)
+:map <Leader>c :ALELint<CR>
+:map <Leader>r :ALEReset<CR>
 
 " Have CtrlP ignore __pycache__
 let g:ctrlp_custom_ignore = '__pycache__'
-
-" We have column highlighting, we dont need flake8 to btch about it
-let g:syntastic_python_flake8_args='--ignore=E501'
 
 " Set tags file
 set tags=~/.vim/tagfile
