@@ -33,6 +33,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'sirtaj/vim-openscad'
 "Plugin 'purofle/vim-mindustry-logic'
 Plugin 'dense-analysis/ale'
+Plugin 'HiPhish/jinja.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
