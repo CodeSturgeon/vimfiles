@@ -37,6 +37,8 @@ Plugin 'HiPhish/jinja.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'preservim/vim-markdown'
 Plugin 'terrastruct/d2-vim'
+Plugin 'othree/html5.vim'
+Plugin 'yuezk/vim-js'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
