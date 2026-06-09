@@ -34,6 +34,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'purofle/vim-mindustry-logic'
 Plugin 'dense-analysis/ale'
 Plugin 'HiPhish/jinja.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
+Plugin 'terrastruct/d2-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
